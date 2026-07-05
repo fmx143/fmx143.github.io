@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loïc C. - Software Engineer & Quantitative Analyst</title>
+    <title>Loïc C. - Project Manager, Product Owner & Quantitative Trader</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300d9ff'>L</text></svg>">
 </head>
@@ -34,12 +34,10 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="title-item"><span class="title-bullet">•</span><span class="gradient-text">IT Project Manager</span></span>
-                    <span class="title-item"><span class="title-bullet">•</span><span class="accent-text">Product Owner</span></span>
-                    <span class="title-item"><span class="title-bullet">•</span><span class="primary-text">Software Engineer</span></span>
-                    <span class="title-item"><span class="title-bullet">•</span><span class="secondary-text">Quantitative Trader</span></span>
+                    <span class="hero-greeting">Hi, I'm Loïc —</span>
+                    <span class="hero-typed"><span id="role-typing" class="gradient-text"></span><span class="typed-caret">|</span></span>
                 </h1>
-                <p class="hero-subtitle">Building, Trying, Iterating elegant solutions, with the help of AI, at the intersection of code, data, and financial markets</p>
+                <p class="hero-subtitle">Building local-first systems that turn market data into tested trading strategies — at the intersection of code, data, and financial markets.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get in Touch</a>
@@ -52,9 +50,9 @@
                         <span class="dot yellow"></span>
                         <span class="dot green"></span>
                     </div>
-                    <pre class="code-snippet"><code><span class="keyword">def</span> <span class="function">build_portfolio</span>():
-    <span class="comment"># Showcase incredible work</span>
-    <span class="keyword">return</span> <span class="string">"Amazing Projects"</span> ✨</code></pre>
+                    <pre class="code-snippet"><code><span class="keyword">def</span> <span class="function">backtest</span>(strategy):
+    <span class="comment"># No look-ahead, walk-forward tested</span>
+    <span class="keyword">return</span> <span class="string">"Sharpe: 1.8"</span> ✨</code></pre>
                 </div>
             </div>
         </div>
@@ -69,11 +67,11 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a technically project manager and passionate developer with a mission to create simple solutions to complex problems. With expertise in software engineering, quantitative analysis, and project management, I bridge the gap between the complex worlds of IT, data, and financial markets.</p>
-                    <p>My projects range from high-frequency trading systems and backtesting frameworks to data pipelines and web applications. I'm driven mostlyby curiosity and a commitment to continuous learning.</p>
+                    <p>I'm primarily a Project Manager & Product Owner, and a Quantitative & Algorithmic Trader focused on the intersection of finance and technology. With expertise spanning software engineering, quantitative analysis, and project delivery, I bridge the gap between the complex worlds of IT, data, and financial markets.</p>
+                    <p>My projects range from vectorized backtesting engines and local-first AI assistants to data pipelines and research sandboxes — I build automated systems that turn complex market data into actionable trading strategies. I'm driven mostly by curiosity and a commitment to continuous learning.</p>
                     <div class="stats">
                         <div class="stat-item">
-                            <span class="stat-number">4+</span>
+                            <span class="stat-number">6+</span>
                             <span class="stat-label">Active Projects</span>
                         </div>
                         <div class="stat-item">
@@ -91,10 +89,10 @@
                         <div class="card-content">
                             <h3>Key Interests</h3>
                             <ul>
-                                <li>💻 Software Engineering & Automation</li>
-                                <li>📈 Quantitative Analysis & Trading</li>
-                                <li>🧠 Systems Thinking & Optimization</li>
-                                <li>🔬 Technical Innovation</li>
+                                <li>📈 Quant Backtesting & Optimization</li>
+                                <li>🤖 Local-First AI & RAG Systems</li>
+                                <li>🌊 Data Pipelines & Streams</li>
+                                <li>🧠 Machine Learning for Time Series</li>
                             </ul>
                         </div>
                     </div>
@@ -108,111 +106,110 @@
         <div class="container">
             <h2 class="section-title">A Few Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1: Moon-bots -->
-                <div class="project-card">
+                <!-- Project 1: QuantForge (flagship, private) -->
+                <div class="project-card featured">
+                    <span class="project-badge">🔒 Private</span>
                     <div class="project-header">
-                        <div class="project-icon">🤖</div>
-                        <h3>Moon-Bots</h3>
+                        <div class="project-icon">⭐</div>
+                        <h3>QuantForge</h3>
                     </div>
-                    <p class="project-description">Advanced trading bot framework with multiple strategy implementations. Features backtesting, technical indicators (RSI, VWAP, SMA), and real-time order management.</p>
+                    <p class="project-description">My flagship, local-first quantitative backtesting engine — a hand-rolled vectorized Numba kernel (no look-ahead), declarative YAML multi-timeframe strategies, grid/Optuna optimization & walk-forward validation, driven by a React + TypeScript UI over FastAPI.</p>
                     <div class="project-tags">
                         <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/python.png" alt="Python"/></span>Python</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/api.png" alt="CCXT"/></span>CCXT</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/pandas.png" alt="Pandas"/></span>Pandas</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/library.png" alt="TA-Lib"/></span>TA-Lib</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/fmx143/Moon-bots" class="project-link" target="_blank">View Code</a>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/api.png" alt="Numba"/></span>Numba</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/api.png" alt="FastAPI"/></span>FastAPI</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/react-native.png" alt="React"/></span>React</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/typescript.png" alt="TypeScript"/></span>TypeScript</span>
                     </div>
                 </div>
 
-                <!-- Project 2: Data-Stream -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">📊</div>
-                        <h3>Data-Stream</h3>
-                    </div>
-                    <p class="project-description">Real-time liquidity and trading data pipeline from Binance. Analyzes big trades, funding rates, and market microstructure with live data processing.</p>
-                    <div class="project-tags">
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/python.png" alt="Python"/></span>Python</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/network.png" alt="WebSockets"/></span>WebSockets</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/cryptocurrency.png" alt="Binance"/></span>Binance</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/pandas.png" alt="Pandas"/></span>Pandas</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/fmx143/Data-Stream" class="project-link" target="_blank">View Code</a>
-                    </div>
-                </div>
-
-                <!-- Project 3: Quantstrategy -->
+                <!-- Project 2: Quantstrategy -->
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">📈</div>
                         <h3>Quantstrategy</h3>
                     </div>
-                    <p class="project-description">Quantitative trading strategy development and optimization platform. Implements data cleaning, strategy backtesting, and performance analysis tools.</p>
+                    <p class="project-description">End-to-end Forex research sandbox — Backtrader/vectorbt backtesting, Optuna hyperparameter optimization, and live/demo execution on MetaTrader 5.</p>
                     <div class="project-tags">
                         <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/python.png" alt="Python"/></span>Python</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/pandas.png" alt="Pandas"/></span>Pandas</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/numpy.png" alt="NumPy"/></span>NumPy</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/matplotlib.png" alt="Matplotlib"/></span>Matplotlib</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/combo-chart.png" alt="Backtrader"/></span>Backtrader</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/combo-chart.png" alt="vectorbt"/></span>vectorbt</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/api.png" alt="Optuna"/></span>Optuna</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/line-chart.png" alt="MetaTrader 5"/></span>MetaTrader 5</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/fmx143/Quantstrategy" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
 
-                <!-- Project 4: Jupyter-Bot -->
+                <!-- Project 3: RAG-Bachelor -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎓</div>
+                        <h3>RAG-Bachelor</h3>
+                    </div>
+                    <p class="project-description">Local-first study assistant that indexes PDF course material into ChromaDB, answers with citations via Ollama, and tracks mastery with SM-2 spaced repetition (FastAPI + HTMX).</p>
+                    <div class="project-tags">
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/python.png" alt="Python"/></span>Python</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/api.png" alt="FastAPI"/></span>FastAPI</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/database.png" alt="ChromaDB"/></span>ChromaDB</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/api.png" alt="Ollama"/></span>Ollama</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/fmx143/RAG-Bachelor" class="project-link" target="_blank">View Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 4: ml-portfolio -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🧠</div>
+                        <h3>ml-portfolio</h3>
+                    </div>
+                    <p class="project-description">Progressive machine-learning notebooks (regression, classification, and more) built with scikit-learn in an "explain-before-code" style — code, explanations, and charts together.</p>
+                    <div class="project-tags">
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/python.png" alt="Python"/></span>Python</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/?size=100&id=WeCId0hyZ7Uu&format=png&color=000000" alt="scikit-learn"/></span>scikit-learn</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/?size=100&id=PDCYQc7tlcgU&format=png&color=000000" alt="Jupyter"/></span>Jupyter</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/pandas.png" alt="Pandas"/></span>Pandas</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/fmx143/ml-portfolio" class="project-link" target="_blank">View Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Jupyter-Bot -->
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">📓</div>
                         <h3>Jupyter-Bot</h3>
                     </div>
-                    <p class="project-description">Interactive Jupyter notebook for forex trading analysis and bot development. Includes historical EURUSD data (2019-2024) and technical analysis utilities.</p>
+                    <p class="project-description">Python-based backtesting engine using Backtrader. Implements EMA crossovers, Bollinger Bands, and ATR-based risk management on EUR/USD.</p>
                     <div class="project-tags">
                         <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/?size=100&id=PDCYQc7tlcgU&format=png&color=000000" alt="Jupyter"/></span>Jupyter</span>
                         <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/python.png" alt="Python"/></span>Python</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/combo-chart.png" alt="Backtrader"/></span>Backtrader</span>
                         <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/pandas.png" alt="Pandas"/></span>Pandas</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/matplotlib.png" alt="Matplotlib"/></span>Matplotlib</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/fmx143/Jupyter-Bot" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
 
-                <!-- Project 5: LCProjects -->
+                <!-- Project 6: Data-Stream -->
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🌐</div>
-                        <h3>LCProjects</h3>
+                        <div class="project-icon">🌊</div>
+                        <h3>Data-Stream</h3>
                     </div>
-                    <p class="project-description">Full-stack Django web application with user authentication, product catalog, and contact management. Features modern templating and database integration.</p>
+                    <p class="project-description">High-performance financial data cleaning and stream handling — real-time liquidity and trading data pipelines with live data processing.</p>
                     <div class="project-tags">
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/django.png" alt="Django"/></span>Django</span>
                         <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/python.png" alt="Python"/></span>Python</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/database.png" alt="PostgreSQL"/></span>PostgreSQL</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap"/></span>Bootstrap</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/network.png" alt="WebSockets"/></span>WebSockets</span>
+                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/pandas.png" alt="Pandas"/></span>Pandas</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/fmx143/LCProjects" class="project-link" target="_blank">View Code</a>
-                    </div>
-                </div>
-
-                <!-- Project 6: Replit Portfolio -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">🎨</div>
-                        <h3>Web Portfolio</h3>
-                    </div>
-                    <p class="project-description">Responsive web portfolio showcasing projects with modern design. Built with HTML/CSS/JavaScript with focus on user experience and visual appeal.</p>
-                    <div class="project-tags">
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/html-5.png" alt="HTML5"/></span>HTML5</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/css3.png" alt="CSS3"/></span>CSS3</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript"/></span>JavaScript</span>
-                        <span class="tag"><span class="tag-logo"><img src="https://img.icons8.com/color/96/github.png" alt="GitHub"/></span>GitHub Pages</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/fmx143/Web Portfolio" class="project-link" target="_blank">View Code</a>
+                        <a href="https://github.com/fmx143/Data-Stream" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
@@ -232,6 +229,10 @@
                             Python
                         </span>
                         <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/typescript.png" alt="TypeScript"/>
+                            TypeScript
+                        </span>
+                        <span class="skill-item">
                             <img class="skill-logo" src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript"/>
                             JavaScript
                         </span>
@@ -242,10 +243,6 @@
                         <span class="skill-item">
                             <img class="skill-logo" src="https://img.icons8.com/color/96/database.png" alt="SQL"/>
                             SQL
-                        </span>
-                        <span class="skill-item">
-                            <img class="skill-logo" src="https://img.icons8.com/?size=100&id=22189&format=png&color=000000" alt="Ruby on Rails"/>
-                            Ruby on Rails
                         </span>
                         <span class="skill-item">
                             <img class="skill-logo" src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" alt="R"/>
@@ -262,12 +259,28 @@
                     <h3>Frameworks & Tools</h3>
                     <div class="skill-items">
                         <span class="skill-item">
-                            <img class="skill-logo" src="https://img.icons8.com/color/96/django.png" alt="Django"/>
-                            Django
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/api.png" alt="FastAPI"/>
+                            FastAPI
                         </span>
                         <span class="skill-item">
-                            <img class="skill-logo" src="https://img.icons8.com/?size=100&id=PDCYQc7tlcgU&format=png&color=000000" alt="Jupyter"/>
-                            Jupyter
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/react-native.png" alt="React"/>
+                            React
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/api.png" alt="Numba"/>
+                            Numba
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/api.png" alt="Optuna"/>
+                            Optuna
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/?size=100&id=WeCId0hyZ7Uu&format=png&color=000000" alt="scikit-learn"/>
+                            scikit-learn
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/combo-chart.png" alt="Backtrader"/>
+                            Backtrader
                         </span>
                         <span class="skill-item">
                             <img class="skill-logo" src="https://img.icons8.com/color/96/pandas.png" alt="Pandas"/>
@@ -278,24 +291,28 @@
                             NumPy
                         </span>
                         <span class="skill-item">
-                            <img class="skill-logo" src="https://img.icons8.com/color/96/matplotlib.png" alt="Matplotlib"/>
-                            Matplotlib
+                            <img class="skill-logo" src="https://img.icons8.com/?size=100&id=PDCYQc7tlcgU&format=png&color=000000" alt="Jupyter"/>
+                            Jupyter
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/database.png" alt="ChromaDB"/>
+                            ChromaDB
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/api.png" alt="Ollama"/>
+                            Ollama
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/line-chart.png" alt="MetaTrader 5"/>
+                            MetaTrader 5
+                        </span>
+                        <span class="skill-item">
+                            <img class="skill-logo" src="https://img.icons8.com/color/96/docker.png" alt="Docker"/>
+                            Docker
                         </span>
                         <span class="skill-item">
                             <img class="skill-logo" src="https://img.icons8.com/color/96/github.png" alt="Git"/>
                             Git/GitHub
-                        </span>
-                        <span class="skill-item">
-                            <img class="skill-logo" src="https://img.icons8.com/?size=100&id=Yl9ip6CjqAEI&format=png&color=000000" alt="GitHub Copilot"/>
-                            GitHub Copilot
-                        </span>
-                        <span class="skill-item">
-                            <img class="skill-logo" src="https://img.icons8.com/?size=100&id=cYX79I7yz55u&format=png&color=000000" alt="QuantConnect"/>
-                            QuantConnect
-                        </span>
-                        <span class="skill-item">
-                            <img class="skill-logo" src="https://img.icons8.com/color/96/line-chart.png" alt="TradingView"/>
-                            TradingView
                         </span>
                     </div>
                 </div>
@@ -314,7 +331,7 @@
                 <div class="skill-category">
                     <h3>Methodology</h3>
                     <div class="skill-items">
-                        <span class="skill-item">� Agile</span>
+                        <span class="skill-item">🔄 Agile</span>
                         <span class="skill-item">👥 Scrum</span>
                         <span class="skill-item">📐 Prince2</span>
                         <span class="skill-item">📋 PMI</span>

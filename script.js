@@ -1,3 +1,50 @@
+// Typing headline: cycles through roles in the hero
+const roleTypingEl = document.getElementById('role-typing');
+if (roleTypingEl) {
+    const roles = [
+        'IT Project Manager',
+        'Product Owner',
+        'Quantitative Researcher',
+        'Algorithmic Trader',
+        'Software Engineer'
+    ];
+    const TYPE_SPEED = 80;
+    const DELETE_SPEED = 40;
+    const HOLD_DELAY = 1800;
+    const NEXT_DELAY = 400;
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function tickTyping() {
+        const currentRole = roles[roleIndex];
+
+        if (!isDeleting) {
+            charIndex++;
+            roleTypingEl.textContent = currentRole.slice(0, charIndex);
+            if (charIndex === currentRole.length) {
+                isDeleting = true;
+                setTimeout(tickTyping, HOLD_DELAY);
+                return;
+            }
+            setTimeout(tickTyping, TYPE_SPEED);
+        } else {
+            charIndex--;
+            roleTypingEl.textContent = currentRole.slice(0, charIndex);
+            if (charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(tickTyping, NEXT_DELAY);
+                return;
+            }
+            setTimeout(tickTyping, DELETE_SPEED);
+        }
+    }
+
+    tickTyping();
+}
+
 // Smooth scroll behavior for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
